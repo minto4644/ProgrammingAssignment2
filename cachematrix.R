@@ -3,7 +3,7 @@
 
 ## makeCacheMatrix is a function that returns a list of functions for getting, setting values of matrix and their Inverse
 
-makeCacheMatrix <- function(x){
+makeCacheMatrix <- function(x = matrix()){
   I <- NULL
   set <- function(y){
     x <<- y
