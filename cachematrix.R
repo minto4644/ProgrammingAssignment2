@@ -29,11 +29,11 @@ cacheSolve <- function(x, ...){
  
   if(!is.null(I)){
       message("getting chached data")
-      return(m)
+      return(I)
   }
   
  
-  I <- solve(x$get, ...)
+  I <- solve(x$get(), ...)
   x$setInverse(I)
   I
   
